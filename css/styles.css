@@ -1,0 +1,333 @@
+@font-face {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/raleway/v34/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVs9pbCFPrEHJA.woff2) format('woff2');
+	unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 100 900;
+	font-stretch: 100%;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/roboto/v47/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3GUBGEe.woff2) format('woff2');
+	unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+body {
+font-family: "Roboto", sans-serif;
+color: #434455;
+background-color: #ffffff;
+line-height: 1.5;
+}
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+} 
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+}
+img {
+	display: block;
+}
+
+/* загальні */
+
+.container {
+	max-width: 1158px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+/*Хедер сторінки*/
+
+.page-header {
+	border-bottom: 1px solid #e7e9fc;
+}
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header-nav {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+}
+.nav-list {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+}
+.nav-menu {
+	display: block;
+	padding: 24px 0;
+	font-family: "Roboto", sans-serif;
+	color: #2e2f42;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+}
+.logo {
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.17;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: #4d5ae5;
+}
+.header-logo {
+	padding: 24px 0;
+	margin-right: 76px;
+}
+.nav-adress {
+display: flex;
+gap: 40px;
+}
+.link {
+	font-style: normal;
+	margin-left: auto;
+}
+.nav-menu:active {
+	color: #404bbf;
+}
+.logo-studio {
+	font-family: "Raleway", sans-serif;
+	color: #2e2f42;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.17;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+}
+.nav-menu:hover,
+.nav-menu:focus {
+	color: #404bbf;
+}
+.link-link {
+	display: block;
+	padding: 24px 0;
+	font-family: "Roboto", sans-serif;
+	color: #434455;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+}
+.link-link:hover,
+.link-link:focus {
+	color: #404bbf;
+}
+
+/*Унікальний контент сторінки*/
+/*Перша секція*/
+
+.dark-bg {
+	background-color: #2e2f42;
+	padding: 188px 0;
+}
+.dark-container {
+	display: grid;
+	align-items: center;
+}
+.title {
+	font-family: "Roboto", sans-serif;
+	color: #ffffff;
+	text-align: center;
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 1.07;
+	letter-spacing: 0.02em;
+	max-width: 496px;
+	margin: 0 auto 48px;
+}
+.button {
+	font-family: "Roboto", sans-serif;
+	color: #ffffff;
+	background-color: #4d5ae5;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	cursor: pointer;
+	letter-spacing: 0.04em;
+	height: 56px;
+	padding: 16px 32px;
+	display: block;
+	min-width: 169px;
+	margin: 0 auto;
+	border-radius: 4px;
+	border: none;
+}
+.button:hover,
+.button:focus {
+	background-color: #404bbf;
+}
+
+/*Друга секція*/
+
+.section-advan {
+	padding: 120px 0;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0, 0, 0, 0);
+	overflow: hidden;
+}
+.container-advan {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.list-advan {
+display: flex;
+align-items: center;
+gap: 24px;
+margin-top: 120px 0;
+}
+.link-item {
+display: block;
+width: calc((1158px - 72px)/4);
+}
+.title-advan {
+	font-family: "Roboto", sans-serif;
+	color: #2e2f42;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+	margin-bottom: 8px;
+}
+.title-text {
+	font-family: "Roboto", sans-serif;
+	color: #434455;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+}
+
+/*Третя секція*/
+
+.team {
+background-color: #f4f4fd;
+padding: 120px 0;
+}
+.title-our {
+	text-align: center;
+	font-family: "Roboto", sans-serif;
+	color: #2e2f42;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.11;
+	letter-spacing: 0.02em;
+	text-transform: capitalize;
+	margin-bottom: 72px;
+}
+.list-team {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+}
+.team-card {
+	background-color: #ffffff;
+	width: calc((100% - 72px) / 4);
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	height: 380px;
+	text-align: center;
+	border-radius: 0 0 4px 4px;
+}
+.card-name {
+	display: block;
+	align-items: center;
+	padding: 32px 0;
+}
+.card {
+	font-family: "Roboto", sans-serif;
+	color: #2e2f42;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+	margin-bottom: 8px;
+}
+.text-card {
+	font-family: "Roboto";
+	color: #434455;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+}
+.portfolio-section {
+	padding: 120px 0;
+}
+.list-portfolio {
+display: flex;
+list-style: none;
+align-items: center;
+flex-wrap: wrap;
+gap: 24px;
+row-gap: 48px;
+margin-top: 120px 0;
+padding: 0;
+}
+
+.link-portfolio {
+	background-color: #ffffff;
+	padding-bottom: 16px;
+}
+
+.title-text-portfolio {
+	display: block;
+	width: 100%;
+	border-bottom: 1px solid #e7e9fc;
+	border-left: 1px solid #e7e9fc;
+	border-right: 1px solid #e7e9fc;
+	padding: 32px 16px;
+}
+
+/*footer*/
+
+.footer {
+	padding: 100px 0;
+	height: 312px;
+}
+.logo-footer {
+display: inline-block;	
+margin-bottom: 16px;
+}
+.logo-web-studio {
+	font-family: "Raleway";
+	color: #f4f4fd;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.17;
+}
+.text {
+	font-family: "Roboto";
+	font-weight: 400;
+	font-size: 16px;
+	color: #f4f4fd;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	max-width: 264px;
+}
