@@ -131,14 +131,15 @@ gap: 40px;
 /*Унікальний контент сторінки*/
 /*Перша секція*/
 
-.dark-bg {
-	background-color: #2e2f42;
+.hero {
+	background-image: linear-gradient(rgba(46, 47, 66, 0.7)), url(/images/people-office.jpg);	
+	background-size: containicon;
+	background-position: center;
+	background-repeat: no-repeat;
 	padding: 188px 0;
 }
-.dark-container {
-	display: grid;
-	align-items: center;
-}
+
+
 .title {
 	font-family: "Roboto", sans-serif;
 	color: #ffffff;
@@ -175,7 +176,7 @@ gap: 40px;
 /*Друга секція*/
 
 .section-advan {
-	padding: 120px 0;
+	padding: 129px 0;
 }
 
 .visually-hidden {
@@ -190,20 +191,32 @@ gap: 40px;
 	clip: rect(0, 0, 0, 0);
 	overflow: hidden;
 }
-.container-advan {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
+
 .list-advan {
 display: flex;
 align-items: center;
 gap: 24px;
 margin-top: 120px 0;
 }
+
 .link-item {
 display: block;
 width: calc((1158px - 72px)/4);
+}
+.first-icons {
+	box-sizing: border-box;	
+	width: 264px;
+	height: 112px;
+	border: 1px solid #8e8f99;
+	border-radius: 4px;
+	background: #f4f4fd;
+	margin-bottom: 8px;
+}
+.icon {
+	display: block;
+	max-width: 100%;
+	margin: 24px 100px;
+	
 }
 .title-advan {
 	font-family: "Roboto", sans-serif;
@@ -306,7 +319,10 @@ padding: 0;
 }
 
 /*footer*/
-
+.dark-bg {
+	background-color: #2e2f42;
+	padding: 188px 0;
+}
 .footer {
 	padding: 100px 0;
 	height: 312px;
