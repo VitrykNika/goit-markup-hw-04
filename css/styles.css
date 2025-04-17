@@ -50,6 +50,9 @@ img {
 
 .page-header {
 	border-bottom: 1px solid #e7e9fc;
+	box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+	0px 1px 1px rgba(46, 47, 66, 0.16),
+	0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-container {
 	display: flex;
@@ -75,7 +78,7 @@ img {
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
-	transition-property: color;
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-menu-list {
 	color: #404BBF;
@@ -138,7 +141,7 @@ img {
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
-	transition-property: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-link:hover,
 .header-link:focus {
@@ -184,7 +187,7 @@ img {
 	margin: 0 auto;
 	border-radius: 4px;
 	border: none;
-	transition-property: color, background-color;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover,
 .button:focus {
@@ -227,13 +230,16 @@ img {
 /*Коробка дів з іконкою*/
 
 .first-icons {
-	box-sizing: border-box;	
-	width: 264px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	height: 112px;
-	border: 1px solid #8e8f99;
+	background-color: #f4f4fd;
 	border-radius: 4px;
-	background: #f4f4fd;
+	border: 1px solid #8e8f99;	
+	margin-bottom: 8px;
 }
+
 .icon {
 	display: block;
 	max-width: 100%;
@@ -286,6 +292,9 @@ padding: 120px 0;
 	gap: 24px;
 }
 .team-card {
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+	0px 1px 1px rgba(46, 47, 66, 0.16),
+	0px 2px 1px rgba(46, 47, 66, 0.08);
 	background-color: #ffffff;
 	width: calc((100% - 72px) / 4);
 	display: flex;
@@ -350,7 +359,7 @@ padding: 120px 0;
 	background-color: #4d5ae5;
 	border-radius: 50%;
 	padding: 12px;
-	transition: color, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icons-social:hover,
 .icons-social:focus {
@@ -428,14 +437,23 @@ padding: 120px 0;
 .footer {
 	padding: 100px 0;
 }
+.container-div-footer {
+	display: flex;
+	align-items: baseline;
+}
+.div-logo-footer {
+	margin-right: 120px;
+}
 .footer-studio {
 	display: flex;
 	gap: 120px;
 }
+
 .logo-footer {
-	display: inline-block;	
+	display: inline-block;
 	margin-bottom: 16px;
 }
+
 .logo-web-studio {
 	font-family: "Raleway", sans-serif;
 	color: #f4f4fd;
@@ -453,41 +471,39 @@ padding: 120px 0;
 	max-width: 264px;
 }
 .icons-social-media {
-	font-family: "Roboto", sans-serif;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
-	color: #fff;
+	color: #ffffff;
 	margin-bottom: 16px;
 }
 .social-link-footer {
 	display: flex;
-	align-items: flex-start;
-	justify-content: flex-start;
-	flex-direction: row;
 	gap: 16px;
 }
+.icons-item-social {
+	width: 40px;
+	height: 40px;
+}
 .icons-social-footer {
+	width: 100%;
+	height: 100%;
+	background-color: #4d5ae5;
+	border-radius: 50%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 40px;
-	height: 40px;
-	background-color: #4d5ae5;
-	border-radius: 50%;
-	padding: 12px;
-	transition: color, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .icons-social-footer:hover,
 .icons-social-footer:focus {
 	background-color: #31D0AA;
 }
-
 .icon-social-svg {
 	fill: #f4f4fd;
 }
+
 
 
 
